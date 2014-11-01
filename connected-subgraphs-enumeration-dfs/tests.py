@@ -1,4 +1,4 @@
-from algorithm import DFSEnumerate
+from algorithm import dfs_enumerate
 
 G = dict()
 
@@ -15,4 +15,4 @@ G[4] = [1]
 
 
 
-DFSEnumerate(G)
+dfs_enumerate(G)
