@@ -1,6 +1,14 @@
 """
     Prints out all connected subgraphs of G using DFS.
 
+    As in "Algorithms for the Shapley and Myerson Values in Graph-restricted Games" (Skibski, Michalak, Rahwan, Wooldridge)
+    [http://aamas2014.lip6.fr/proceedings/aamas/p197.pdf]:
+        "Broadly speaking, our enumeration algorithm traverses the graph in a depth-first manner, and uses a divide-and-conquer technique.
+    We start with a single node and try to expand it to a bigger connected subgraph. Whenever a new node is analyzed, we explore all
+    its edges one by one, and when we find a new - not yet discovered - node, we split the calculations into two parts: in the first one,
+    we add a new node to our subgraph; in the second one, we mark this node as forbidden and never enter it again. Thus, the first part
+    enumerates subgraphs with, and second one without, the new node."
+
     :param G examined graph
 """
 
